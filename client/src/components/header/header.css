@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --primary-color: #f3a800;
+  /* utiltites colors */
+  --white--color: hsl(0, 10%, 100%);
+}
+
+.header {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 15px;
+  height: 60px;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--primary-font);
+}
+
+.header__title > img {
+  object-fit: contain;
+  width: 15%;
+}
+
+.header__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--primary-font);
+}
+.header__button > button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 60px;
+  height: 30px;
+  background: var(--primary-color);
+  border-radius: 6px;
+  color: var(--white--color);
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+  text-transform: uppercase;
+}
+
+.header__button > button:hover {
+  opacity: 0.8;
+}
+
+.header__button > button:active {
+  transform: translateY(4px);
+  border: 0px 2px 3px;
+}
