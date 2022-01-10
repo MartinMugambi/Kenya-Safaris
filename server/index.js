@@ -1,11 +1,13 @@
 const express = require('express');
 const cors = require('cors');
-const mysql = require('mysql');
+const router = require('./api/routes/user');
 
 const app = express();
 
+//Middlewares
 app.use(express.json());
-app.use();
+app.use(express.urlencoded({extended: false}));
+app.use('/api', router);
 app.use(cors());
 
 const PORT = process.env.PORT || 8000;

@@ -18,6 +18,20 @@ const Post = () =>{
            <ThumbDownIcon />
         </div>
          </div>
+         <div className='post__safari'>
+           <h3>Create a Safari</h3>
+           <input type= 'text' placeholder='creator'/>
+           <input type= 'text' placeholder='title'/>
+           <textarea rows="4" cols="100">
+
+           </textarea>
+            <div className='post__safari__btn'>
+            <button className='post__safari__btn1'>choose file</button>
+           <span>No file choosen</span>
+            </div>
+           <button className='btn-1'>Submit</button>
+           <button className='btn-2'>clear</button>
+         </div>
         </section>
     );
 }
