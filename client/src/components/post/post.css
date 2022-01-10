@@ -1,0 +1,30 @@
+.post__card {
+  width: 250px;
+  height: 330px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+}
+
+.post__card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.post__card__img {
+  width: 250px;
+}
+.post__card__img > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.post__card__icons {
+  display: flex;
+  gap: 10px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.post__card__desc {
+  padding: 10px;
+}
