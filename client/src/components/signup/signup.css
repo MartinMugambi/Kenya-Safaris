@@ -8,7 +8,7 @@
   --white--color: hsl(0, 10%, 100%);
 }
 
-.sigin {
+.signup {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,24 +17,23 @@
   font-family: var(--primary-font);
 }
 
-.sigin__section {
+.signup__section {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   width: 300px;
-  height: 300px;
+  height: 370px;
   padding: 20px;
 }
-.sigin__section__logo {
+.signup__section__logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.sigin__section__logo > img {
+.signup__section__logo > img {
   object-fit: contain;
   width: 18%;
 }
-
-.sigin__form {
+.signup__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,18 +43,36 @@
   font-family: var(--primary-font);
 }
 
-.sigin__form > input[type="text"] {
+.signup__form__input {
+  display: flex;
+  gap: 10px;
+  width: 250px;
+}
+
+.signup__form__input > input[type="text"] {
+  outline: none;
+  padding: 5px 12px;
+  width: 50%;
+}
+
+.signup__form__register {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 250px;
+}
+.signup__form__register > input[type="text"] {
+  outline: none;
+  padding: 5px 12px;
+  width: 100%;
+}
+.signup__form__register > input[type="password"] {
   outline: none;
   padding: 5px 12px;
   width: 100%;
 }
 
-.sigin__form > input[type="password"] {
-  outline: none;
-  padding: 5px 12px;
-  width: 100%;
-}
-.sigin__form > button {
+.signup__form > button {
   outline: none;
   width: 100%;
   height: 25px;
@@ -66,21 +83,21 @@
   cursor: pointer;
 }
 
-.sigin__form > button:hover {
+.signup__form > button:hover {
   opacity: 0.8;
 }
 
-.sigin__form > button:active {
+.signup__form > button:active {
   transform: translateY(4px);
 }
 
-.sigin__form > p {
+.signup__form > p {
   position: relative;
   left: 15px;
   font-size: 0.9rem;
 }
 
-.sigin__form > p > span {
+.signup__form > p > span {
   text-decoration: underline;
   cursor: pointer;
 }
