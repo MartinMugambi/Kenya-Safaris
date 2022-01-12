@@ -36,7 +36,10 @@ In order to run the application Type the following command
 npm start
 ```
 
-The Application Runs on **localhost:3000**
+The Application Runs on **localhost:8000**
+<p align="center">
+    <img src="images/home.png">
+</p>
 
 ## Kenya-Safari - Server
  Written in Node JS and MySQL datbase
