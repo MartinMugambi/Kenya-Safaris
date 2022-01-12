@@ -1,4 +1,4 @@
-# Kenya-Safaris - React, Redux and Node JS Project
+# 🛠️Kenya-Safaris - React, Redux and Node JS Project 🛠 
 Kenya-Safaris is an web application that enables Kenyan local tourists to share their travels and tours to different Places. 
 ## Front-end
 The front-end of this application was created using React and Redux.
