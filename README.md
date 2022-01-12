@@ -39,8 +39,9 @@ npm start
 The Application Runs on **localhost:8000**
 
 <p align="center">
-    <img src="images/landing_page">
-</p>
+    <img src="images/landing_page.png">
+</p> landing_page.png
+
 
 ## Kenya-Safari - Server
  Written in Node JS and MySQL datbase
