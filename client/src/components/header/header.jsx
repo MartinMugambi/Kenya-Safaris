@@ -1,6 +1,12 @@
 import './header.css';
 import safari from '../../assets/images/safari.png';
+import {useNavigate} from 'react-router-dom'
 const Header = () =>{
+  const navigate = useNavigate();
+
+   const navigationToPage = () =>{
+     navigate('/signin')
+   }
     return(
         <header className="header">
           <div className="header__title">
@@ -8,7 +14,7 @@ const Header = () =>{
            <img src={safari} alt="logo" />
           </div>
           <div className="header__button">
-           <button>Sigin</button>
+           <button onClick={navigationToPage}>Sigin</button>
           </div>
         </header>
     );

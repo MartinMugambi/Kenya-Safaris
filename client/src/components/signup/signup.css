@@ -101,3 +101,7 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+.loa {
+  border: 10px solid red;
+}

@@ -1,0 +1,57 @@
+input[type="text"] {
+  outline: none;
+  padding: 5px 12px;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  width: 230px;
+  padding: 10px 0px;
+}
+
+.post__safari__btn {
+  display: flex;
+  margin-left: 20px;
+}
+.post__safari__btn1 {
+  outline: none;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+.post__safari__btn1 > span {
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.btn-1 {
+  outline: none;
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  color: var(--white--color);
+  background: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-1:hover {
+  opacity: 0.8;
+}
+
+.btn-1:active {
+  transform: translateY(4px);
+}
+
+.btn-2 {
+  outline: none;
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  color: var(--white--color);
+  background: rgb(221, 76, 105);
+  border: none;
+  cursor: pointer;
+}

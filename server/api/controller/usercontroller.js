@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt');
 const pool = require('../../config/database');
- 
+ const path  = require('path');
 const getAllUsers = (req, res)=>{
     pool.getConnection((err, connection)=>{
          if(err) throw err;
@@ -22,6 +22,8 @@ const getAllUsers = (req, res)=>{
     const hashedPassword =  await bcrypt.hash(req.body.password, salt);
     
     const user = {
+        firstname: req.body.firstname,
+        lastname: req.body.lastname,
         username: req.body.username,
         password: hashedPassword,
     }
@@ -47,12 +49,11 @@ const getAllUsers = (req, res)=>{
         connection.query('SELECT password from register WHERE username = ?', [username], async (err, results)=>{
             connection.release();
             const hashedPassword = results[0].password;
-           
              if(err){
                  res.send(err);
              } else {
                 const valid = await bcrypt.compare(password, hashedPassword);
-                 valid ? res.send('success') : res.send('password is incorrect');
+                 valid ? res.status(200).json({msg: "success"}) : res.status(400).json({msg:'password is incorrect'});
              }
            
         });
@@ -60,8 +61,25 @@ const getAllUsers = (req, res)=>{
    
   }
 
+  const getPosts = (req, res)=>{
+    pool.getConnection((err, connection)=>{
+      if(err) throw err;
+       connection.query('SELECT * from  posts', (err, results)=>{
+           connection.release();
+           if(!err){
+               res.send(results);
+           } else {
+               res.status(401).json({msg:'could not fetch data'});
+           }
+       })
+    });
+}
+
+
+
 module.exports= {
     getAllUsers,
     registerUser,
-    loginUser,   
+    loginUser,
+    getPosts,   
 }
