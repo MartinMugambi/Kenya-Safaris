@@ -37,8 +37,9 @@ npm start
 ```
 
 The Application Runs on **localhost:8000**
+
 <p align="center">
-    <img src="images/home.png">
+    <img src="images/landing_page">
 </p>
 
 ## Kenya-Safari - Server
